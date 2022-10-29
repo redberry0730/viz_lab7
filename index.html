@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Layout & Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Milligram CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Airport Connections</h1>
+            <div class="buttons">
+                <label for="force" style="display: inline-block;">
+                    <input type="radio" id="force" name="type" value="force" checked>
+                    Force
+                </label>
+                <label for="map" style="display: inline-block;">
+                    <input type="radio" id="map" name="type" value="map">
+                    Map
+                </label>
+            </div>
+            <div class="force-chart"></div>
+        </div>
+    </body>
